@@ -42,7 +42,7 @@ header{
 .nav-header{
   position: absolute;
   left: 50%;
-  top: 5px;
+  top: 25px;
   transform: translateX(-50%);
 }
 
@@ -65,12 +65,20 @@ header{
 
 .nav-menu li a{
   display: block;
-  padding: 8px 15px;
+  padding: 8px 20px;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
   color: #333;
+}
+
+.nav-menu li a:hover{
+  color: var(--prime-color);
+}
+
+.nav-menu li a.active{
+  color: var(--prime-color);
 }
 
 .nav-menu li:nth-child(1),
@@ -86,17 +94,8 @@ header{
 .nav-toggle{
   display: none;
 }
-/* .logo{
-  position: absolute;
-  left: 50%;
-  top: 10px;
-}
 
-.logo img{
-  width: 50px;
-} */
-
-
+/* hero section */
 .hero{
     position: relative;
     width: 100%;
